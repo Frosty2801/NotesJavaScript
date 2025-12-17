@@ -1,72 +1,91 @@
-
 :root {
-    --body:hsl(227, 75%, 14%);
+  --body:hsl(227, 75%, 14%);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(180deg, #040918 0%, #091540 100%);
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  background-color: hsl(225, 23%, 24%);
+  height: 5rem;
+  width: 63rem;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 20px;
+  position: relative;
+  border-radius: 8px;
+  background: hsla(225, 23%, 24%, 0);
+}
+
+h1 {
+  
 }
 
 .card-container {
-    width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .cards {
-    
-    background: hsl(225, 23%, 24%);
-    width: auto;
-    height: auto;
-    border-radius: 15px;
-    padding: 1.5rem;
-    
+  background: hsl(225, 23%, 24%);
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  padding: 1.5rem;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-
-h2{
-   margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .logo-info{
-    display: flex;
+  display: flex;
+}
 
+h2, p {
+  margin: 0;
+}
+
+.texto {
+  margin-left: 1rem;
 }
 
 .check{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
-.texto{
-    margin-left: 1rem;
+
+div button {
+  border-radius: 30px;
+  padding: 12px 20px;
+  background: #332d2d00;
+  color: #fff;
 }
+
+button:hover {
+  background-color: #ff5a5a;
+  transition: 0.5s;
+}
+
 .switch {
   position: relative;
   display: inline-block;
